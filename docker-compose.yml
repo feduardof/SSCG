@@ -1,0 +1,11 @@
+version: '3'
+services:
+    openssl:
+        build:
+            dockerfile: ./dockerfile
+            context: .
+
+        image: eduardo/openssl
+        container_name: openssl
+        volumes:
+          - ./data:/data
